@@ -1,0 +1,28 @@
+<MsixPackagingToolTemplate
+    xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018"
+    xmlns:mptv2="http://schemas.microsoft.com/msix/msixpackagingtool/template/1904"
+    xmlns:v3="http://schemas.microsoft.com/msix/msixpackagingtool/template/1907"
+    xmlns:v4="http://schemas.microsoft.com/msix/msixpackagingtool/template/1910"
+    xmlns:v5="http://schemas.microsoft.com/msix/msixpackagingtool/template/2001">
+
+   <Settings
+	AllowTelemetry="true"
+	ApplyAllPrepareComputerFixes="true"
+	GenerateCommandLineFile="false"
+ 	AllowPromptForPassword="false"
+	EnforceMicrosoftStoreVersioningRequirements="false"
+ 	v5:AddPackageIntegrity="true"
+   />
+
+   <Installer Path="[Installer]"/>
+   <SaveLocation PackagePath="[SaveLocation]" />
+   <PackageInformation
+       PackageName="[PackageName]"
+       PackageDisplayName="[PackageDisplayName]"
+       PublisherName="[PublisherName]"
+       PublisherDisplayName="[PublisherDisplayName]"
+       Version="1.0.0.0">
+   </PackageInformation>
+   
+
+</MsixPackagingToolTemplate>
